@@ -4,6 +4,7 @@ Run Minecraft Bedrock Edition for Android on Arch Linux. This project is 99% bas
 ##### 2. It also removes some temporary and trash files after closing Minecraft everytime, automatically.
 ##### 3. GameMode is an optional Dependency and is automatically enabled if installed. 
 ##### 4. There is an option to enable an FPS Counter for Minecraft that will only work for devices using **Mesa Graphics Drivers**. It could be used by Right Clicking the Desktop Entry and Selecting the option with FPS Counter or by entering command ``mcpreconf-fps``.
+##### 5. For Microsoft Account these optional dependencies must be installed **qt5-base**, **qt5-webengine** and **qt5-quickcontrols**.
 # Installation
 ## Via Prebuilt Package
 Prebuilt packages (**.pkg.tar.zst**) are available in Releases Section and can be installed by :
