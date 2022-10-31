@@ -12,5 +12,5 @@ Actions=fps;kill;
 Name=New Window with FPS Counter
 Exec=mcpreconf-fps
 [Desktop Action kill]
-Name=Close Stuck Minecraft Window
+Name=Close Stuck Minecraft Windows
 Exec=killmc
