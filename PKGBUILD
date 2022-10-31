@@ -6,7 +6,7 @@ url="https://github.com/humanbeing27/mcpelinux"
 arch=(x86_64)
 license=("GPLv3")
 depends=("hicolor-icon-theme")
-optdepends=("gamemode: For Gamemode tweaks"
+optdepends=("gamemode: For GameMode tweaks"
             "qt5-base: For Microsoft Account Support"
             "qt5-webengine: For Microsoft Account Support"
             "qt5-quickcontrols: For Microsoft Account Support")
