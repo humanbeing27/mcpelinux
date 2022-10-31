@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Minecraft
+Exec=mcpreconf
+Icon=minecraftpe
+Type=Application
+Categories=Game;
+Terminal=false
+StartupWMClass=Minecraft
+Keywords=minecraft;mc;mcpe;pocket;edition;mcbe;bedrock
+Actions=fps;kill;
+[Desktop Action fps]
+Name=New Window with FPS Counter
+Exec=mcpreconf-fps
+[Desktop Action kill]
+Name=Close Stuck Minecraft Window
+Exec=killmc
