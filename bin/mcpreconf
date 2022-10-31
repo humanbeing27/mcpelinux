@@ -1,0 +1,8 @@
+#!/bin/bash
+mcdir=~/MinecraftBE
+pkill msa-daemon & msa-daemon & if [ -f "/bin/gamemoderun" ];
+then
+gamemoderun mcpelauncher-client -dg /var/lib/mcpelinux/ -dd $mcdir -fes ; mcprivacy & pkill msa-daemon
+else
+mcpelauncher-client -dg /var/lib/mcpelinux/ -dd $mcdir -fes ; mcprivacy & pkill msa-daemon
+fi

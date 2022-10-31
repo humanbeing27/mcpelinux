@@ -1,0 +1,3 @@
+#!/bin/bash
+mcdir=~/MinecraftBE
+mv -f $mcdir/minecraftpe/packcache ~/.cache ; rm -rf $mcdir/minecraftpe $mcdir/premium_cache $mcdir/treatments ; rm -rf $mcdir/*.ent $mcdir/mcmurc.cache $mcdir/games/com.mojang/ud* $mcdir/games/com.mojang/.nomedia ; rm -rf $mcdir/games/com.mojang/logs ; cd $mcdir/games/com.mojang/minecraftpe ; rm -rf ./CatalogCache ./CatalogScratch ./ClubsScreenshots ./ContentCache ./DownloadTemp ./font ./Flighting ./FriendIcons ./MessagingService ./persona ./ServerContent ; rm -rf ./catalog_info.json ./clientId.txt ./hs.hex ./storage_object ./telemetry_info.json ./valid_know_packs.json ; mkdir $mcdir/minecraftpe ; rm $mcdir/XblEvents* ; mv -f ~/.cache/packcache $mcdir/minecraftpe/

@@ -1,0 +1,2 @@
+#!/bin/bash
+env GALLIUM_HUD="simple,fps" mcpreconf
