@@ -1,0 +1,52 @@
+pkgname=mcpelinux
+pkgver=1.30
+pkgrel=1
+pkgdesc="Run Minecraft Bedrock Edition on Arch Linux. To Run a Minecraft version, paste the extracted .apk file in /var/lib/mcpelinux."
+url="https://github.com/humanbeing27/mcpelinux"
+arch=(x86_64)
+license=("GPLv3")
+depends=("hicolor-icon-theme")
+optdepends=("gamemode: For Gamemode tweaks"
+            "qt5-base: For Microsoft Account Support"
+            "qt5-webengine: For Microsoft Account Support"
+            "qt5-quickcontrols: For Microsoft Account Support")
+source=("$url/raw/main/bin/killmc"
+        "$url/raw/main/bin/mcpelauncher-client"
+        "$url/raw/main/bin/mcpelauncher-error"
+        "$url/raw/main/bin/mcpelauncher-webview"
+        "$url/raw/main/bin/mcpreconf"
+        "$url/raw/main/bin/mcpreconf-fps"
+        "$url/raw/main/bin/mcprivacy"
+        "$url/raw/main/bin/msa-daemon"
+        "$url/raw/main/bin/msa-ui-qt"
+        "$url/raw/main/libfmod.so.12.0"
+        "$url/raw/main/gamecontrollerdb.txt"
+        "$url/raw/main/mcpelauncher-client.desktop"
+        "$url/raw/main/minecraftpe.png")
+b2sums=("SKIP"
+        "SKIP"
+        "SKIP"
+        "SKIP"
+        "SKIP"
+        "SKIP"
+        "SKIP"
+        "SKIP"
+        "SKIP"
+        "SKIP"
+        "SKIP"
+        "SKIP"
+        "SKIP")
+package() {
+        mkdir -p $pkgdir/usr/bin
+        mkdir -p $pkgdir/usr/share/applications
+        mkdir -p $pkgdir/usr/share/icons/hicolor/scalable/apps
+        mkdir -p $pkgdir/usr/share/mcpelauncher/lib/native/x86_64
+        cp {msa-ui-qt,mcpreconf,msa-daemon,mcpreconf-fps,mcprivacy,killmc,mcpelauncher-client,mcpelauncher-webview,mcpelauncher-error} $pkgdir/usr/bin
+        cp mcpelauncher-client.desktop $pkgdir/usr/share/applications
+        cp minecraftpe.png $pkgdir/usr/share/icons/hicolor/scalable/apps
+        cp gamecontrollerdb.txt $pkgdir/usr/share/mcpelauncher
+        cp libfmod.so.12.0 $pkgdir/usr/share/mcpelauncher/lib/native/x86_64
+        chmod +x $pkgdir/usr/bin/*
+        chown root -R $pkgdir/*
+        chgrp root -R $pkgdir/*
+}
