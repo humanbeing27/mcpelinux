@@ -6,6 +6,11 @@ Run Minecraft Bedrock Edition for Android on Arch Linux. This project is 99.9% b
 ##### 4. There is an option to enable an FPS Counter for Minecraft that will only work for devices using **Mesa Graphics Drivers**. It could be used by Right Clicking the Desktop Entry and Selecting the option with FPS Counter or by entering command ``mcpreconf-fps``.
 ##### 5. For Microsoft Account these optional dependencies must be installed **qt5-base**, **qt5-webengine** and **qt5-quickcontrols**.
 # Installation
+# Prebuilt Package
+Download the package from **Releases** section and run :
+```sh
+sudo pacman -U ./mcpelinux-*version*-x86-64.pkg.tar.zst
+```
 Download the PKGBUILD and run :
 ```sh
 git clone https://github.com/humanbeing27/mcpelinux.git
