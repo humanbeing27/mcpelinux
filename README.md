@@ -8,15 +8,15 @@ Run Minecraft Bedrock Edition for Android on Arch Linux. This project is 99% bas
 # Installation
 ## Via Prebuilt Package
 Prebuilt packages (**.pkg.tar.zst**) are available in Releases Section and can be installed by :
-
-#`` pacman -U ./mcpelinux-"version"-x86_64.pkg.tar.zst ``
+```sh
+pacman -U ./mcpelinux-"version"-x86_64.pkg.tar.zst 
+```
 ## Build Manually
 Download the PKGBUILD manually or run :
-
-$ `` curl -L https://github.com/humanbeing27/mcpelinux/raw/main/PKGBUILD -o ./PKGBUILD ``
-
-Then build and install by running this command :
-
-$ `` makepkg -sircfC ``
+```sh
+git clone https://github.com/humanbeing27/mcpelinux.git
+cd mcpelinux && cp ./bin/* ./
+makepkg -sircCf
+```
 # Setting Up Minecraft
 For now, there is nothing included here to download the actual Minecraft. So, you could use the AppImage of **mcpelauncher** to download the x86_64 APK .Copy the *assets/* and *lib/* folders from *~/.local/share/mcpelauncher/versions/**version-number**/* directory of the APK to */var/lib/mcpelinux/* directory. For some,  Minecraft may be stuck at 56% or 51% during loading. A Workaround is killing the Process or by Right Clicking the Desktop Entry and selecting option **Close Stuck Minecraft Windows** or another way is to enter the command ``killmc``.
