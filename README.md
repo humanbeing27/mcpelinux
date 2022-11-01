@@ -9,7 +9,7 @@ Run Minecraft Bedrock Edition for Android on Arch Linux. This project is 99.9% b
 # Prebuilt Package
 Download the package from **Releases** section and run :
 ```sh
-sudo pacman -U ./mcpelinux-*version*-x86-64.pkg.tar.zst
+sudo pacman -U ./mcpelinux-"version"-x86-64.pkg.tar.zst
 ```
 Download the PKGBUILD and run :
 ```sh
