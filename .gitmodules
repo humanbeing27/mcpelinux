@@ -1,0 +1,6 @@
+[submodule "mcpelauncher-manifest"]
+  path = mcpelauncher-manifest
+  url = ../../minecraft-linux/mcpelauncher-manifest
+[submodule "msa-manifest"]
+  path = msa-manifest
+  url = ../../minecraft-linux/msa-manifest
