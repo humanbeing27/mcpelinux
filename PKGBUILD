@@ -1,6 +1,6 @@
 pkgname=mcpelinux
 pkgver=1.31
-pkgrel=0
+pkgrel=1
 pkgdesc="Run Minecraft Bedrock Edition on Arch Linux. To Run a Minecraft version, paste the extracted .apk file in /var/lib/mcpelinux."
 url="https://github.com/humanbeing27/mcpelinux"
 arch=(x86_64)
