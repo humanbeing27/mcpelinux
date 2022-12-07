@@ -1,11 +1,12 @@
 pkgname=mcpelinux
 pkgver=1.31
-pkgrel=1
+pkgrel=2
 pkgdesc="Run Minecraft Bedrock Edition on Arch Linux. To Run a Minecraft version, paste the extracted .apk file in /var/lib/mcpelinux."
 url="https://github.com/humanbeing27/mcpelinux"
 arch=(x86_64)
 license=("GPLv3")
-depends=("openssl")
+depends=("pulseaudio"
+         "libpulse")
 optdepends=("gamemode: For GameMode tweaks"
             "qt5-base: For Microsoft Account Support"
             "qt5-webengine: For Microsoft Account Support"
